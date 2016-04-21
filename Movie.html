@@ -1,8 +1,8 @@
 <html>
 <!- - 
 Program Name:   Seminole Movie Connection
-Author: 
-Date: 
+Author: Zachary Brown
+Date: 4/20/16 
 Filename:   Movie.html
 - ->
 <head>
@@ -52,7 +52,38 @@ Filename:   Movie.html
             <h3 class="list-group-item-heading">Release Date:</h3>
             <p class="list-group-item-text lead text-primary" id="Released">  </p>
         </a> 
-
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Awards won:</h3>
+            <p class="list-group-item-text lead text-primary" id="Awards">  </p>
+        </a>
+             <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Writer of Film:</h3>
+            <p class="list-group-item-text lead text-primary" id="Writer">  </p>
+        </a>
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Director:</h3>
+            <p class="list-group-item-text lead text-primary" id="Director">  </p>
+        </a>
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Genre:</h3>
+            <p class="list-group-item-text lead text-primary" id="Genre">  </p>
+        </a>
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Year Movie was Filmed:</h3>
+            <p class="list-group-item-text lead text-primary" id="Year">  </p>
+        </a>
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Type:</h3>
+            <p class="list-group-item-text lead text-primary" id="Type">  </p>
+        </a>
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Poster:</h3>
+            <p class="list-group-item-text lead text-primary" id="Poster">  </p>
+        </a>
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Response:</h3>
+            <p class="list-group-item-text lead text-primary" id="Response">  </p>
+        </a>
     </div>
 </div> 
     <script>
@@ -70,6 +101,14 @@ Filename:   Movie.html
                      $('#Actors').html(json.Actors);
                      $('#Plot').html(json.Plot);
                      $('#Released').html(json.Released);
+                     $('#Awards').html(json.Awards);
+                     $('#Writer').html(json.Writer);
+                     $('#Director').html(json.Director);
+                     $('#Genre').html(json.Genre);
+                     $('#Year').html(json.Year);
+                     $('#Type').html(json.Type);
+                     $('#Poster').html(json.Poster);
+                     $('#Response').html(json.Response);
                 })
                 .fail(function() {
                       alert("Posting failed.");              
@@ -79,4 +118,4 @@ Filename:   Movie.html
   });//end of ready      
  </script>
 </body>
-</html>
+</html> 
